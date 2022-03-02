@@ -13,7 +13,7 @@ For this workshop. We will demonstration how to start portainer server on labdoc
      portainer/portainer-ce:2.11.1
 
 2. After finish portainer will display ip address and password to access (example):
-	http://<Public IP>:9443
+	https://<Public IP>:9443
 		
 3. Access via web form and start use
 

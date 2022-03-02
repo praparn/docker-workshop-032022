@@ -98,7 +98,7 @@ Registry on multihost docker-machine
 17. (all) Add "labdocker.com" on hosts (/etc/hosts) by command:
 	sudo -- sh -c -e "echo '<Private IP of Registry>   labdocker.com' >> /etc/hosts"
 		Example: Registry ip: 10.0.1.182	
-			sudo -- sh -c -e "echo '10.0.1.182   labdocker.com' >> /etc/hosts"	
+			sudo -- sh -c -e "echo '10.21.1.182   labdocker.com' >> /etc/hosts"	
 
 	ping labdocker.com
 
@@ -131,14 +131,13 @@ Registry on multihost docker-machine
 	docker container stop registrylab
 	docker container rm -v registrylab
 
-
 =================================== 
 Registry with Harbor
 ===================================
 
 23. (Teacher Machine) Setup Harbor Registry by command:
 	cd ~
-	wget https://github.com/goharbor/harbor/releases/download/v2.4.1/harbor-offline-installer-v2.4.1.tgz
+	wget https://github.com/goharbor/harbor/releases/download/v2.4.1/harbor-online-installer-v2.4.1.tgz
 	tar xvf harbor-online-installer-v2.4.1.tgz && cd ./harbor
 
 24. (Teacher Machine) Configure initial start by command:

@@ -1,5 +1,5 @@
 For this workshop. We will demonstration enhance security on docker
-
+-----------------------------------------------------------------------------------------------------------------
 Part1: Docker Bench for Security 
 -----------------------------------------------------------------------------------------------------------------
 1. Pull script from git by command: "cd ~/ && git clone https://github.com/docker/docker-bench-security.git"
@@ -44,7 +44,6 @@ Part1: Docker Bench for Security
 6. CleanUp Lab by command:
 	cd ~/
 	sudo rm -rf ~/docker-bench-security
-
 
 -----------------------------------------------------------------------------------------------------------------
 Part2: Apparmor in Container
@@ -94,8 +93,6 @@ Part2: Apparmor in Container
 10. Stop test container by command: "docker container stop sectestrestrict && docker container rm sectestrestrict"
 
 11. Remove apparmor profile by command: sudo apparmor_parser -R ~/docker-workshop-032022/Workshop-2-3-Docker-Security/restrict-apparmor && sudo aa-status
-
-
 
 -----------------------------------------------------------------------------------------------------------------
 Part3: Content Trust (Signed Image)
